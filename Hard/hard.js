@@ -18,18 +18,3 @@ function secure() {
 
 let x = secure();
 console.log(x.getName());
-
-var ppi = {
-  firstName: "Harry",
-  lastName: "Styles",
-  mailingName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-
-  ssn: function () {
-    const ssn = 222 - 22 - 2222;
-    return ssn;
-  },
-};
-console.log(ppi.mailingName());
-console.log(ppi.ssn());

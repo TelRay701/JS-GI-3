@@ -5,10 +5,10 @@ class Person {
     this.age = age;
   }
   exercise() {
-    console.log(`I love to hike. - ${this.name} `);
+    console.log(`I love to play basketball. - ${this.name} `);
   }
   fetchJob() {
-    console.log(`${this.name} is a ${this.job}`);
+    console.log(`${this.name} is a ${this.job}.`);
   }
 }
 
@@ -33,21 +33,21 @@ class Programmer extends Person {
     }
   }
   learnLanguages() {
-    console.log("Spanish", "Portuguese", "Italian");
+    console.log("English", "Creole");
   }
   listLanguages() {
     console.log(`${this.name} knows ${this.languages}`);
   }
 }
 
-const anuel = new Programmer(
-  "Anuel",
-  "singer",
+const ray = new Programmer(
+  "Ray",
+  "developing coder",
   28,
-  "Spanish, portuguese and italian."
+  "English and Creole."
 );
 
-anuel.exercise();
-anuel.fetchJob();
-anuel.OfferNewTask();
-anuel.listLanguages();
+ray.exercise();
+ray.fetchJob();
+ray.OfferNewTask();
+ray.listLanguages();
